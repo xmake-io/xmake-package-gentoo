@@ -3,7 +3,7 @@
   <repo quality="experimental" status="unofficial">
     <name>xmake-io-overlay</name>
     <description lang="en">The overlay for xmake and xmake-related things.</description>
-    <homepage>https://github.com/xmake-io/xmake-package-gentoo</homepage>
+    <homepage>https://xmake.io</homepage>
     <owner type="person">
       <name>Phate</name>
       <email>ValleyKnight@protonmail.com</email>
