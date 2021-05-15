@@ -18,6 +18,8 @@ else
 	S="${WORKDIR}"
 fi
 
+# tarball doesn't provide tests
+RESTRICT="test"
 LICENSE="Apache-2.0"
 SLOT="0"
 
