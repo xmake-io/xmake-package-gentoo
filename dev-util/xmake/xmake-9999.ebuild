@@ -14,7 +14,7 @@ LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
 
-DEPEND="dev-vcs/git virtual/pkg-config"
+DEPEND="dev-vcs/git virtual/pkgconfig"
 RDEPEND="${DEPEND}"
 BDEPEND="${DEPEND}"
 
