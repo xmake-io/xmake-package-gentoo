@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<repositories version="1.0">
+  <repo quality="experimental" status="unofficial">
+    <name>xmake-io-overlay</name>
+    <description lang="en">The overlay for xmake and xmake-related things.</description>
+    <homepage>https://xmake.io</homepage>
+    <owner type="person">
+      <name>Phate</name>
+      <email>ValleyKnight@protonmail.com</email>
+    </owner>
+    <source type="https">https://github.com/xmake-io/xmake-package-gentoo.git</source>
+  </repo>
+</repositories>
