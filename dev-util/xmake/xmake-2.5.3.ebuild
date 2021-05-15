@@ -27,11 +27,18 @@ DEPEND="virtual/pkgconfig"
 RDEPEND="${DEPEND}"
 BDEPEND="${DEPEND}"
 
+DOCS=(
+	CHANGELOG.md CODE_OF_CONDUCT.md CONTRIBUTING.md
+	NOTICE.md README.md README_zh.md
+)
+
 src_compile() {
 	emake build
 }
 
 src_install() {
+	einstalldocs
+
 	emake PREFIX="/usr" DESTDIR="${D}" install
 }
 
