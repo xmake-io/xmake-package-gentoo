@@ -1,7 +1,7 @@
 # Copyright 2021 Gentoo Authors
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=7
+EAPI=8
 
 inherit optfeature
 
@@ -13,7 +13,7 @@ if [[ ${PV} == *9999* ]]; then
 	EGIT_REPO_URI="https://github.com/xmake-io/${PN}.git"
 else
 	SRC_URI="https://github.com/xmake-io/${PN}/releases/download/v${PV}/${PN}-v${PV}.tar.gz"
-	KEYWORDS="~amd64 ~x86 ~riscv"
+	KEYWORDS="~amd64 ~riscv ~x86"
 	# extraction path may change in future
 	S="${WORKDIR}"
 fi
@@ -23,9 +23,11 @@ RESTRICT="test"
 LICENSE="Apache-2.0"
 SLOT="0"
 
-DEPEND="virtual/pkgconfig
-        sys-libs/ncurses
-        sys-libs/readline"
+DEPEND="
+    virtual/pkgconfig
+    sys-libs/ncurses
+    sys-libs/readline
+"
 RDEPEND="${DEPEND}"
 BDEPEND="${DEPEND}"
 
